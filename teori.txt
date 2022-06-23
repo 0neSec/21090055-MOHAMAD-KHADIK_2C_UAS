@@ -1,0 +1,63 @@
+1. SOAL NOMER 01
+private static Node insert(Node node,int key){
+if (node == null){
+Node temp =new Node(key);
+}
+if (key < node.key){
+node.left = insert(node.left, key);
+}
+esle if (key > node.key){
+node.right = insert(node.reght, key);
+}
+retrun node;
+}
+
+private static void inorder(Node root){
+if ( root !=null){
+inorder(root.left);
+sout?(""+root.key)
+inorder(root.right);
+}
+}
+
+public static void main(String[] agrs){
+Node root = null;
+root = insert(root, B 5376 BY);
+root = insert(root, G 5647 GE);
+root = insert(root, H 6384 HK);
+root = insert(root, AD 6536 ZA);
+root = insert(root, T 6538 AR);
+root = insert(root, D 7362 SS);
+root = insert(root, R 8824 DK);
+inorder(root);
+
+}
+
+
+SOAL 2
+public void quicksort(int start, int end){
+if (start<end){
+int p = partition(start, end);
+quicksort(start, p-1);
+quicksort (p+1, end);}
+}
+
+
+public void printArr(int n){
+int i ;
+for (i = 0 ; i<n; i++)
+sout(this.data[i]+"");
+}
+public static void main(String[] agrs{
+int[] dataArray = {2,18,1,0,56,76,98,34,12};
+int n = dataArray.lenght;
+sout("""befor sorting array element are -\s""");
+
+quicksort _myQS = new quick();
+_myQS.setData(dataArray);
+_myQS.printArr(n);
+_myQS.quicksort(0, n-1);
+sout("\After sorting Array Element Are - ");
+_myQS.printArr(n);
+sout();
+}
